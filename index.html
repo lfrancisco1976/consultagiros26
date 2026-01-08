@@ -102,8 +102,8 @@ function processPayload(payload){
     Motorista: r["Motorista"] || r["MOTORISTA"] || r.motorista || "",
     Cliente: r["Cliente"] || r["CLIENTE"] || r.cliente || "",
     HoraEntrada: r["Hora Entrada"] || r["HORA ENTRADA"] || r["HoraEntrada"] || r.horaEntrada || "",
-    KmEntrada: r["Km Entrada"] || r["KM ENTRADA"] || r.kmEntrada || "",
-    HoraSaida: r["Hora Saída"] || r["HORA SAÍDA"] || r["HoraSaida"] || r.horaSaida || "",
+    KmEntrada: r["Km Entrada"] || r["KM ENTRADA"] || r.kmEntrada || r.KmEntrada || "",
+    HoraSaida: r["Hora Saída"] || r["HORA SAÍDA"] || r["HoraSaida"] || r.horaSaida || r.HoraSaída ||"",
     KmSaida: r["Km Saída"] || r["KM SAÍDA"] || r.kmSaida || r.KmSaída || ""
   }));
 
