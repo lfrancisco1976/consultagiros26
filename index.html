@@ -24,6 +24,15 @@
   @keyframes spin { from{transform:rotate(0)} to{transform:rotate(360deg)} }
   .error{ padding:12px; background:#fff1f2; border:1px solid #ffd4d7; color:#9b1c1c; border-radius:8px; }
   @media (max-width:720px){ th,td{ font-size:13px; padding:8px 10px } header h1{ font-size:16px } }
+  /* Define a largura exata da 3ª coluna (Motorista) */
+table th:nth-child(3), 
+table td:nth-child(3) {
+  width: 180px;
+  max-width: 180px;
+  white-space: nowrap; /* Evita que o nome quebre em duas linhas */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Se o nome for maior que 180px, mete "..." */
+}
 </style>
 </head>
 <body>
